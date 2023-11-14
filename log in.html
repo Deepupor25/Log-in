@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Hire Freelancer & Find Work | Freelancer</title>
+    <link rel="stylesheet" href="log in.css">
+</head>
+<body>
+    <section>
+        <form class="form" action="">
+            <img src="Freelancer logo.png" alt="">
+            <h3>Welcome Back</h3> <br>
+            <button id="butt"><h2>Log in with Facebook</h2></button>
+            <div class="mid">
+                <div class="dash"></div><h3>OR</h3><div class="dash"></div>
+            </div>
+            <input id="em" type="email" placeholder="Email or Username" > <br><br>
+            <div id="pass">
+                <input id="inputOne" type="password">
+                <button id="button" type="button" onclick="toggle()"><iconify-icon icon="mdi:eye-off" width="30"></iconify-icon></button>
+            </div>
+            <div class="check">
+                <div class="ch"><input id="goat" type="checkbox" ><h3>Remember me</h3></div> <div class="fp"><a href="">Forgot Password?</a></div>
+            </div> <br>
+            <a href="dashboard.html" style="text-decoration: none; color: white;"><button id="butt"><h2>Log In</h2></button></a>
+            <div class="dash aa"></div>
+            <h3 class="si">Don't have an account?     <a href="sign up.html" target="_blank">Sign Up</a></h3>
+            <div>
+                <img src="App store.png" alt="">
+                <img src="Google play.png" alt="">
+            </div>
+        </form>
+    </section>
+
+
+
+    <script>
+        let inputOne = document.getElementById('inputOne')
+        let button = document.getElementById('button')
+    
+        function toggle(){
+            inputOne.type == 'password' ? inputOne.type = 'text' : inputOne.type = 'password'
+            inputOne.type == 'password' ? button.innerHTML = `<iconify-icon icon="mdi:eye-off" width="30"></iconify-icon>` : button.innerHTML = `<iconify-icon icon="ion:eye" width="30"></iconify-icon>` 
+        }
+    
+    </script>
+    
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>
+
+
+
